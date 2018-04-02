@@ -1,4 +1,4 @@
-package website
+package com.rhdzmota.website
 
 import java.util.Date
 

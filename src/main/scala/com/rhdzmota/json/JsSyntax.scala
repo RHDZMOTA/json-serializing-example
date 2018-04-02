@@ -1,8 +1,8 @@
-package json
+package com.rhdzmota.json
 
-object JsonSyntax {
+object JsSyntax {
 
-  implicit class JsonWriterOps[A](value: A){
+  implicit class JsWriterOps[A](value: A){
     def toJson(implicit jsWriter: JsWriter[A]): JsValue =
       jsWriter write value
   }

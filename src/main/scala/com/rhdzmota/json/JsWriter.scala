@@ -1,6 +1,6 @@
-package json
+package com.rhdzmota.json
 
-import website.{Visitor, Anonymous, User}
+import com.rhdzmota.website.{Visitor, Anonymous, User}
 
 trait JsWriter[A] {
   def write(value: A): JsValue
@@ -8,7 +8,7 @@ trait JsWriter[A] {
 
 object JsWriterInstances {
   import java.util.Date
-  import JsonSyntax.JsonWriterOps
+  import JsSyntax.JsWriterOps
 
   implicit object StringWriter extends JsWriter[String] {
     override def write(value: String): JsValue = JsString(value)

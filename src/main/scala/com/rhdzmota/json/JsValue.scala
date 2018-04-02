@@ -1,4 +1,4 @@
-package json
+package com.rhdzmota.json
 
 sealed trait JsValue {
   def stringify: String
@@ -15,7 +15,7 @@ final case class JsString(value: String) extends JsValue {
 }
 
 final case class JsNumber(value: Double) extends JsValue {
-  override def stringify: String =  "\"" + value.toString + "\""
+  override def stringify: String =  value.toString
 }
 
 case object JsNull extends JsValue {
