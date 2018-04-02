@@ -72,5 +72,5 @@ If we want to use the writers we only have to import:
 import java.util.Date
 import JsWriterInstances._ 
 
-Json.toJson(Person("a", "a@mail.com", new Date()))
+JsonUtil.toJson(Person("a", "a@mail.com", new Date()))
 ```
